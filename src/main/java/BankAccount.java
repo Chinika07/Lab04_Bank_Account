@@ -16,46 +16,10 @@ public class BankAccount {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
-        this.accountNumber = 0;
-        this.balance = 1000;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
 
     }
-
-    // Behaviours/ Methods
-
-    // accept an amount as deposit
-
-    // Add to balance
-
-    public void deposit(Integer amountDeposited) {
-        balance += amountDeposited;
-        System.out.println("Deposited balance: " + amountDeposited);
-    }
-
-    public Integer getCurrentBalance() {
-        return balance;
-    }
-
-    // Withdrawal
-
-    public void withdrawal(Integer amountWithdrawn) {
-        balance -= amountWithdrawn;
-        System.out.println("Amount withdrawn: " + amountWithdrawn);
-    }
-
-    public Integer getNewBalance() {
-        return balance;
-    }
-
-    // Interest rate section (?)
-
-//    public void interest(Integer interestRate) {
-//        balance * interestRate * 2 / 100 // 2 is the time period
-//        System.out.println("Interest Rate: " + interestRate);
-//    }
-//    public Integer getInterest() {
-//        return balance;
-//    }
 
     // Getters & Setters
 
@@ -79,16 +43,57 @@ public class BankAccount {
         return this.balance;
     }
 
-    //    Part of Testing section
-    Long sumArray(Long[] numbers) {
-        Long sum = 0L;
 
-        for (var num : numbers) {
-            sum += num;
+    // Behaviours/ Methods
 
-        }
-        return sum;
+    // 1. Accept an amount as deposit
+
+    // 2. Add to balance
+
+    public void deposit(Integer amountDeposited) {
+        balance += amountDeposited;
+        System.out.println("Deposited Amount: " + amountDeposited);
     }
+
+    public Integer getCurrentBalance() {
+        return balance;
+    }
+
+    // Withdrawal
+
+    // 1. Accept an amount to be withdrawn
+
+    // 2. Subtract from balance
+
+    public void withdrawal(Integer amountWithdrawn) {
+        balance -= amountWithdrawn;
+        System.out.println("Amount Withdrawn: " + amountWithdrawn);
+    }
+
+    public Integer getNewBalance() {
+        return balance;
+    }
+
+    // Interest rate section (?)
+
+//    public void interest(Integer interestRate) {
+//        balance * interestRate * 2 / 100 // 2 is the time period
+//        System.out.println("Interest Rate: " + interestRate);
+//    }
+//    public Integer getInterest() {
+//        return balance;
+//    }
+
+    //    Part of Testing section
+//    Long sumArray(Long[] numbers) {
+//        Long sum = 0L;
+//
+//        for (var num : numbers) {
+//            sum += num;
+//
+//        }
+//        return sum;
+//    }
 }
 
 
