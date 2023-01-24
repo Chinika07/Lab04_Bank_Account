@@ -32,7 +32,7 @@ public class BankAccountTest {
 //   @Test
 //    void canDeposit() {
 //        var deposit = new BankAccount();
-//        assertThat(deposit.add(3, 2)).isEqualTo(5L);
+//        assertThat(deposit.add(3L, 2L)).isEqualTo(5L);
 //    }
 //
 //    @Test
