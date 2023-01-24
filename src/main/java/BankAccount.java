@@ -2,12 +2,13 @@ import java.time.LocalDate;
 
 public class BankAccount {
 
+
     // Properties
-    public String firstName;
-    public String lastName;
-    public LocalDate dateOfBirth;
-    public Integer accountNumber;
-    public Integer balance;
+    private String firstName;
+    private String lastName;
+    private LocalDate dateOfBirth;
+    private Integer accountNumber;
+    private Integer balance;
 
     // Constructor
     public BankAccount(String firstName, String lastName, LocalDate dateOfBirth, Integer accountNumber,
@@ -16,7 +17,7 @@ public class BankAccount {
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
         this.accountNumber = 0;
-        this.balance = 120;
+        this.balance = 1000;
 
     }
 
@@ -30,6 +31,7 @@ public class BankAccount {
         balance += amountDeposited;
         System.out.println("Deposited balance: " + amountDeposited);
     }
+
     public Integer getCurrentBalance() {
         return balance;
     }
@@ -40,20 +42,54 @@ public class BankAccount {
         balance -= amountWithdrawn;
         System.out.println("Amount withdrawn: " + amountWithdrawn);
     }
+
     public Integer getNewBalance() {
         return balance;
     }
 
+    // Interest rate section (?)
+
+//    public void interest(Integer interestRate) {
+//        balance * interestRate * 2 / 100 // 2 is the time period
+//        System.out.println("Interest Rate: " + interestRate);
+//    }
+//    public Integer getInterest() {
+//        return balance;
+//    }
+
     // Getters & Setters
 
-    public String getFirstName() { return this.firstName; }
-    public String getLastName() { return this.lastName; }
-    public LocalDate getDateOfBirth() { return this.dateOfBirth; }
-    public int getAccountNumber () { return this.accountNumber; }
-    public int getBalance () { return this.balance; }
+    public String getFirstName() {
+        return this.firstName;
+    }
 
+    public String getLastName() {
+        return this.lastName;
+    }
 
+    public LocalDate getDateOfBirth() {
+        return this.dateOfBirth;
+    }
 
+    public int getAccountNumber() {
+        return this.accountNumber;
+    }
 
+    public int getBalance() {
+        return this.balance;
+    }
 
+    //    Part of Testing section
+    Long sumArray(Long[] numbers) {
+        Long sum = 0L;
+
+        for (var num : numbers) {
+            sum += num;
+
+        }
+        return sum;
+    }
 }
+
+
+

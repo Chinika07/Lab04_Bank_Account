@@ -12,13 +12,22 @@ public class Main {
                 100000
 
         );
-        System.out.println(bankAccount.getLastName());
+        System.out.println("First Name: " + bankAccount.getFirstName());
+        System.out.println("Second Name: " + bankAccount.getLastName());
+        System.out.println("Date of Birth:" + bankAccount.getDateOfBirth());
+        System.out.println("Account Number: "+ bankAccount.getAccountNumber());
+        System.out.println("Current Balance: " + bankAccount.getBalance());
 
-        bankAccount.deposit(1000);
+        bankAccount.deposit(120);
         System.out.println("New balance: " + bankAccount.getBalance());
 
         bankAccount.withdrawal(500);
         System.out.println("New Current balance: " + bankAccount.getBalance());
+
+//        bankAccount.interest(7);
+//        System.out.println("Interest : " + bankAccount.getInterest());
+
+
     }
 
 
